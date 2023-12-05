@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librería Liber</title>
+    <link rel="icon" href="img/letra-l.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/misEstilosUsuario.css">
+</head>
+
+<body id="grid">
+    <!-- ENCABEZADO -->
+    <header id="encabezado" class="container-fluid">
+        <div class="row">
+            <!-- fila 1 -->
+            <div class="row py-2">
+                <div class="col-lg-3 d-flex align-items-center justify-content-center">
+                    <img id="logo" class="img-fluid" src="img/LibreriaReccursoLogo (1).png" alt="Liber">
+                </div>
+                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                    <nav class="navbar">
+                        <div class="container-fluid">
+                            <form class="d-flex" role="search">
+                                <input id="busqueda" class="form-control me-4" type="search"
+                                    placeholder="Buscar por título, autor o ISBN" size="100%" aria-label="Search">
+                                <button id="botonBusqueda" class="btn btn-outline-success" type="submit"><i
+                                        class="fa-solid fa-magnifying-glass" style="color: 4F5524;"></i></button>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-3 d-flex justify-content-center align-items-center">
+                    <div>
+                        <button type="button" class="btn btn-light"><img id="imgEnc" src="img/usuario.png"
+                                alt=""><br><span id="letraEnc">Usuario</span></button>
+                        <button type="button" class="btn btn-light"><img id="imgEnc" src="img/corazon.png"
+                                alt=""><br><span id="letraEnc">Mis deseos</span></button>
+                        <button type="button" class="btn btn-light"><img id="imgEnc" src="img/carrito-de-compras.png"
+                                alt=""><br><span id="letraEnc">Carrito</span></button>
+                    </div>
+                </div>
+            </div>
+            <!-- fila2 -->
+            <nav class="row container navbar navbar-expand-lg  bg-white">
+                <div class="container d-flex justify-content-center align-items-center">
+                    <div id="market"></div>
+                    <div class="navbar-brand " style="color: #7c421d;" href="#">Menú</div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul id="barraEnc" style="margin-left: 10px;" class="navbar-nav me-auto mb-2 mb-lg-0 d-flex ">
+                            <li class="nav-item5 dropdown">
+                                <a class="nav-link " href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Más Vendidos
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item5 dropdown">
+                                <a class="nav-link " href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Novedades
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item5 dropdown">
+                                <a class="nav-link " href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Ficción
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item5 dropdown">
+                                <a class="nav-link " href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    No Ficción
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item5 dropdown">
+                                <a class="nav-link " href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Infantil
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item5 dropdown">
+                                <a class="nav-link " href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Juvenil
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item5 dropdown">
+                                <a class="nav-link " href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Audio Libros
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item5 dropdown">
+                                <a class="nav-link " href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Ebooks
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item5 dropdown">
+                                <a class="nav-link " href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Contáctanos
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CUERPO -->
+    <section id="cuerpo" class="container-fluid">
+
+        <div id="IScontenedor">
+
+            <!-- Encabezado del contenedor -->
+            <div id="encabezado">
+                <ul>
+                    <li>
+                        <a style="color: black;" href="acceso_cuenta.html">Acceso a tu cuenta</a>
+                    </li>
+                    <li style="background-color: #ed9f6b;">
+                        <a style="color: white;" href="nuevo_usuario.html">Nuevo usuario</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Cuerpo del contenedor -->
+            <div id="cuerpo">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" name="nombre" class="form-control" id="nombre" placeholder="nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="email@gmail.com">
+                </div>
+                
+                <label for="contraseña" class="form-label">Contraseña</label>
+                <div class="mb-3 contraseña-container" id="contraseña">
+                    <input type="password" name="password" class="form-control pass" id="pass" placeholder="contraseña">
+                    <button class="btnContraseña" onclick="togglePassword(this)" type="button" id="button-addon2"><i
+                            class="fa-solid fa-eye"></i></button>
+                </div>
+                
+                <label for="contraseña" class="form-label">Repetir Contraseña</label>
+                <div class="mb-3 contraseña-container" id="contraseña">
+                    <input type="password" name="password" class="form-control pass" id="pass" placeholder="contraseña">
+                    <button class="btnContraseña" onclick="togglePassword(this)" type="button" id="button-addon2"><i
+                            class="fa-solid fa-eye"></i></button>
+                </div>
+
+                <div id="noRobot">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            No soy un robot
+                        </label>
+                    </div>
+                    <img src="img/captcha.png" alt="">
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        He leído y acepto la política de privacidad
+                    </label>
+                </div>
+
+                <div class="d-grid gap-2">
+                    <button class="btn guardar" type="button">Guardar cambios</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer id="pie" class="container-fluid">
+        <div id="pieCaja" class="row p-4 text-white">
+            <div class="col-md-6 col-lg-3 " style="text-align: center;">
+                <a href=""><img id="logo" src="img/libbRecurso 2png.png" alt=""></a>
+                <br><br>
+                <p class="h6">Visita nuestras redes sociales</p>
+                <div id="redes">
+                    <a href=""><img src="img/facebook.png" alt=""></a>
+                    <a href=""><img src="img/instagram.png" alt=""></a>
+                    <a href=""><img src="img/twitter.png" alt=""></a><br>
+                    <a href=""><img src="img/linkedin.png" alt=""></a>
+                    <a href=""><img src="img/youtube.png" alt=""></a>
+                    <a href=""><img src="img/tiktok.png" alt=""></a>
+                </div>
+            </div><br><br>
+            <div class="col-md-6  col-lg-3 " style="text-align: center;">
+                <p class="h6">Información legal</p>
+                <a href="" class="text-white">librerialiber.com</a>
+                <p style="margin-bottom: 0;">+51 915 401 988</p>
+                <p style="margin-bottom: 0;">Av. Panamericana Nte. 37</p>
+                <p style="margin-bottom: 0;">Horario de atención:</p>
+                <p style="margin-bottom: 0;">Lunes a Viernes</p>
+                <p style="margin-bottom: 0;">de 8:30 AM a 6:00 PM</p>
+                <p style="margin-bottom: 0;">Sábado</p>
+                <p style="margin-bottom: 0;">de 9:00 AM a 5:00 PM</p>
+            </div><br><br>
+            <div class="col-md-6  col-lg-3" style="text-align: center;">
+                <p class="h6">Sobre Nosotros</p>
+                <a href="" class="text-white">Quienes somos</a><br><br>
+                <p style="margin-bottom: 2px;">Política</p>
+                <a href="" class="text-white">Política de privacidad</a><br>
+                <a href="" class="text-white">Términos y condiciones</a>
+            </div><br><br>
+            <div class="col-md-6  col-lg-3" style="text-align: center;">
+                <p class="h6">Medios de pago</p><br>
+                <img src="img/visa.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="img/masterCard.png" alt=""><br>
+                <img src="img/american-express.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="img/pagoEfectivo.png" alt=""><br>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/misProgramas.js"></script>
+</body>
+
+</html>

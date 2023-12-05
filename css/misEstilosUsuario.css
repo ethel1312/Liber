@@ -1,0 +1,341 @@
+#logo {
+    width: 170px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Encabezado*/
+#busqueda {
+    border-radius: 30px;
+}
+
+#botonBusqueda {
+    background-color: #ed9f6b;
+    border-color: orange;
+}
+
+#imgEnc {
+    width: 20px;
+}
+
+#letraEnc {
+    font-size: 13px;
+}
+
+#barraEnc>li {
+    margin-left: 55px;
+}
+
+.navbar-brand {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .navbar-brand {
+        display: block;
+    }
+
+    #barraEnc>li {
+        margin-left: 0px;
+    }
+}
+
+#barraEnc>li:hover {
+    background-color: #ed9f6b;
+}
+
+/*CUERPO*/
+section {
+    background-color: #f1ecc8;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*Pie de página*/
+footer {
+    background-color: #4f5524;
+}
+
+footer img {
+    width: 70px;
+}
+
+#redes {
+    margin-top: 25px;
+}
+
+#redes img {
+    width: 40px;
+    margin: 5px;
+}
+
+/************************************************************/
+
+/* Accesoa tu cuenta */
+
+#IScontenedor {
+    background-color: white;
+    width: 45%;
+    margin: 50px auto;
+    padding-bottom: 10px;
+}
+
+/* Encabezado del contenedor */
+
+#IScontenedor #encabezado {
+    height: 50px;
+    border-bottom: 2px solid #ed9f6b;
+}
+
+#IScontenedor ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin: auto;
+    padding: 0;
+}
+
+#IScontenedor li {
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#IScontenedor #encabezado a {
+    text-decoration: none;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Cuerpo */
+
+#IScontenedor input {
+    display: block;
+}
+
+#IScontenedor #cuerpo {
+    margin: 25px 15%;
+}
+
+#IScontenedor #cuerpo a {
+    color: #ed9f6b;
+}
+
+#IScontenedor #cuerpo a:hover {
+    color: #d67b4e;
+}
+
+#IScontenedor #cuerpo #contraseña{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+#IScontenedor #cuerpo i{
+    color: #4f5524;
+    cursor: pointer;
+}
+
+#IScontenedor #cuerpo .btnContraseña{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    
+}
+
+#IScontenedor #cuerpo .guardar{
+    background-color: #ed9f6b;
+    color: white;
+    margin-top: 10%;
+}
+
+#IScontenedor #cuerpo .guardar:hover {
+    background-color: #d67b4e;
+    border-color: #d67b4e;
+}
+
+/************************************************************/
+
+/* Nuevo usuario */
+
+#IScontenedor #noRobot{
+    background-color: #f5f5f5;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px; 
+    border-radius: 5px;
+}
+
+#IScontenedor #noRobot .form-check {
+    margin-right: 20px;
+}
+
+#IScontenedor #noRobot img{
+    height: 50px;
+}
+
+#IScontenedor #noRobot:hover {
+    cursor: pointer;
+    background-color: #e2e6ea; 
+}
+
+#IScontenedor #cuerpo input[type="checkbox"] {
+    border-color: #4f5524;
+}
+
+#IScontenedor #cuerpo input[type="checkbox"]:checked {
+    background-color: #4f5524; 
+}
+
+
+#IScontenedor #cuerpo input[type="checkbox"]:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#IScontenedor #cuerpo input[type="text"]:focus,
+#IScontenedor #cuerpo input[type="password"]:focus,
+#IScontenedor #cuerpo input[type="email"]:focus,
+#IScontenedor #cuerpo input[type="number"]:focus {   
+    border: none;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem #c0c0c0
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+    #pieCaja>div {
+        padding-bottom: 30px;
+    }
+
+    .contenedor-principal {
+        font-size: 14px;
+    }
+
+    .contenedor-carousel {
+        overflow: visible;
+    }
+
+    .contenedor-carousel2 {
+        overflow: visible;
+    }
+
+    .contenedor-carousel3 {
+        overflow: visible;
+    }
+
+    .contenedor-carousel4 {
+        overflow: visible;
+    }
+
+    .contenedor-carousel .carousel-products {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .contenedor-carousel2 .carousel-products {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .contenedor-carousel3 .carousel-products {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .contenedor-carousel4 .carousel-products {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .indicadores,
+    .flecha-izquierda,
+    .flecha-derecha,
+    .flecha-izquierda2,
+    .flecha-derecha2,
+    .flecha-izquierda3,
+    .flecha-derecha3,
+    .flecha-izquierda4,
+    .flecha-derecha4 {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    #pieCaja>div {
+        padding-bottom: 30px;
+    }
+
+    .contenedor-principal {
+        font-size: 14px;
+    }
+
+    .contenedor-carousel {
+        overflow: visible;
+    }
+
+    .contenedor-carousel2 {
+        overflow: visible;
+    }
+
+    .contenedor-carousel3 {
+        overflow: visible;
+    }
+
+    .contenedor-carousel4 {
+        overflow: visible;
+    }
+
+    .contenedor-carousel .carousel-products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .contenedor-carousel2 .carousel-products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .contenedor-carousel3 .carousel-products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .contenedor-carousel4 .carousel-products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .indicadores,
+    .flecha-izquierda,
+    .flecha-derecha,
+    .flecha-izquierda2,
+    .flecha-derecha2,
+    .flecha-izquierda3,
+    .flecha-derecha3,
+    .flecha-izquierda4,
+    .flecha-derecha4 {
+        display: none;
+    }
+}

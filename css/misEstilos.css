@@ -1,0 +1,391 @@
+#logo {
+    width: 170px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Encabezado*/
+#busqueda {
+    border-radius: 30px;
+}
+
+#botonBusqueda {
+    background-color: #ed9f6b;
+    border-color: orange;
+}
+
+#imgEnc {
+    width: 20px;
+}
+
+#letraEnc {
+    font-size: 13px;
+}
+
+#barraEnc>li {
+    margin-left: 55px;
+}
+
+.navbar-brand {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .navbar-brand {
+        display: block;
+    }
+
+    #barraEnc>li {
+        margin-left: 0px;
+    }
+}
+
+#barraEnc>li:hover {
+    background-color: #ed9f6b;
+}
+
+/*CUERPO*/
+section {
+    background-color: #f1ecc8;
+    width: 100%;
+    margin: 0;
+}
+
+#anuncio img {
+    padding: 0px;
+}
+
+#carrusel img {
+    height: 350px;
+}
+
+#carrusel {
+    padding: 0px;
+}
+
+/*Carrusel de libros*/
+.card {
+    margin: 0 .5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+}
+
+.contenedor-principal {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.contenedor-principal {
+    margin: 0 auto;
+}
+
+.contenedor-principal .flecha-izquierda,
+.contenedor-principal .flecha-derecha {
+    position: absolute;
+    border: none;
+    background: transparent;
+    font-size: 40px;
+    height: 50px;
+    top: calc(50% -25%);
+    line-height: 40px;
+    width: 50px;
+    color: #4f5524;
+    cursor: pointer;
+    z-index: 500;
+    transition: .2s ease all;
+    border-radius: 20px;
+}
+
+.contenedor-principal .flecha-izquierda {
+    left: 0;
+}
+
+.contenedor-principal .flecha-derecha {
+    right: 0;
+}
+
+.contenedor-principal .flecha-izquierda:hover,
+.contenedor-principal .flecha-derecha:hover {
+    background: #ed9f6b;
+}
+
+.contenedor-carousel {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.contenedor-carousel2 {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.contenedor-carousel3 {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.contenedor-carousel4 {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.contenedor-carousel .carousel-products {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.contenedor-carousel2 .carousel-products {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.contenedor-carousel3 .carousel-products {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.contenedor-carousel4 .carousel-products {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* .producto {} */
+
+.producto:hover {
+    border-color: var(--botones);
+}
+
+.btn-add-cart:hover {
+    background: var(--botones);
+}
+
+.producto:hover {
+    transform: scale(1.1);
+    transform-origin: center;
+}
+
+/*Publicidad Pequeña*/
+#publicidadPequeña img {
+    width: 375px;
+}
+
+/*Información publicitaria*/
+#infoPubli {
+    background-color: #ed9f6b;
+}
+
+#infoPubli img {
+    width: 80px;
+}
+
+/*Suscribete*/
+
+
+
+
+/*Pie de página*/
+footer {
+    background-color: #4f5524;
+}
+
+footer img {
+    width: 70px;
+}
+
+#redes {
+    margin-top: 25px;
+}
+
+#redes img {
+    width: 40px;
+    margin: 5px;
+}
+
+/* Inicio de sesión */
+
+
+
+#IScontenedor{
+    border: 2px solid red;
+    background-color: white;
+    width: 40%;
+    margin: 50px auto;
+}
+
+#IScontenedor ul{
+    display: flex;
+    justify-content: center;
+    border: 2px solid blue;
+    width: 100%;
+    margin: auto;
+    padding-left: 0;
+}
+
+#IScontenedor li{
+    list-style: none;
+    border: 2px solid greenyellow;
+    width: 50%;
+    text-align: center;
+}
+
+#IScontenedor a{
+    text-decoration: none;
+    color: black;
+}
+
+#IScontenedor li:hover {
+    background-color: #ed9f6b;
+}
+
+#IScontenedor a:hover {
+    color: white;
+}
+
+#IScontenedor input{
+    display: block;
+}
+
+#IScontenedor #cuerpo{
+    border: 2px solid greenyellow;
+    margin: 25px 50px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+    #pieCaja>div {
+        padding-bottom: 30px;
+    }
+
+    .contenedor-principal {
+        font-size: 14px;
+    }
+
+    .contenedor-carousel {
+        overflow: visible;
+    }
+
+    .contenedor-carousel2 {
+        overflow: visible;
+    }
+
+    .contenedor-carousel3 {
+        overflow: visible;
+    }
+
+    .contenedor-carousel4 {
+        overflow: visible;
+    }
+
+    .contenedor-carousel .carousel-products {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .contenedor-carousel2 .carousel-products {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .contenedor-carousel3 .carousel-products {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .contenedor-carousel4 .carousel-products {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .indicadores,
+    .flecha-izquierda,
+    .flecha-derecha,
+    .flecha-izquierda2,
+    .flecha-derecha2,
+    .flecha-izquierda3,
+    .flecha-derecha3,
+    .flecha-izquierda4,
+    .flecha-derecha4 {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    #pieCaja>div {
+        padding-bottom: 30px;
+    }
+
+    .contenedor-principal {
+        font-size: 14px;
+    }
+
+    .contenedor-carousel {
+        overflow: visible;
+    }
+
+    .contenedor-carousel2 {
+        overflow: visible;
+    }
+
+    .contenedor-carousel3 {
+        overflow: visible;
+    }
+
+    .contenedor-carousel4 {
+        overflow: visible;
+    }
+
+    .contenedor-carousel .carousel-products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .contenedor-carousel2 .carousel-products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .contenedor-carousel3 .carousel-products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .contenedor-carousel4 .carousel-products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .indicadores,
+    .flecha-izquierda,
+    .flecha-derecha,
+    .flecha-izquierda2,
+    .flecha-derecha2,
+    .flecha-izquierda3,
+    .flecha-derecha3,
+    .flecha-izquierda4,
+    .flecha-derecha4 {
+        display: none;
+    }
+}
